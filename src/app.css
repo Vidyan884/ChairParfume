@@ -1,0 +1,89 @@
+:root {
+	/* Premium Color Palette */
+	--color-bg: #050505;
+	--color-surface: #121212;
+	--color-surface-hover: #1a1a1a;
+	
+	--color-text-main: #F5F5F0;
+	--color-text-muted: #a0a0a0;
+	
+	--color-gold: #D4AF37;
+	--color-gold-dim: #997b2f;
+	--color-gold-light: #f3cf55;
+	
+	/* Typography */
+	--font-serif: 'Playfair Display', serif;
+	--font-sans: 'Lato', sans-serif;
+	
+	/* Spacing */
+	--spacing-xs: 0.5rem;
+	--spacing-sm: 1rem;
+	--spacing-md: 2rem;
+	--spacing-lg: 4rem;
+	--spacing-xl: 8rem;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--color-bg);
+	color: var(--color-text-main);
+	font-family: var(--font-sans);
+	line-height: 1.6;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-serif);
+	font-weight: 400;
+	color: var(--color-gold);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: var(--color-gold-light);
+}
+
+/* Animations Utility Classes */
+.fade-in {
+	opacity: 0;
+	animation: fadeIn 1s ease-out forwards;
+}
+
+.slide-up {
+	opacity: 0;
+	transform: translateY(20px);
+	animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+	to { opacity: 1; }
+}
+
+@keyframes slideUp {
+	to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--color-surface-hover);
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-gold-dim);
+}
