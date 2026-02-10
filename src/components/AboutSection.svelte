@@ -92,6 +92,8 @@
         .about {
             grid-template-columns: 1fr;
             text-align: center;
+            padding: 4rem 1.5rem;
+            gap: 2rem;
         }
     }
 

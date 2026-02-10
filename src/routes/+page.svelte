@@ -68,7 +68,9 @@
 
 <style>
     .hero {
-        height: 100vh;
+        min-height: 100vh;
+        /* Fallback for browsers that don't support dvh */
+        min-height: 100dvh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -79,7 +81,7 @@
                 rgba(5, 5, 5, 0.8)
             ),
             url("/hero-bg.png");
-        background-size: contain;
+        background-size: cover; /* Changed from contain to cover for better mobile fill */
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -88,6 +90,7 @@
         opacity: 0;
         transform: translateY(30px);
         transition: all 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+        padding: 0 1rem; /* Prevent text touching edges on small screens */
     }
 
     .content.visible {
@@ -107,6 +110,7 @@
             var(--color-text-main)
         );
         background-size: 300% 100%;
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: shimmer 4s ease-in-out infinite;
@@ -126,8 +130,22 @@
 
     @media (max-width: 768px) {
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             letter-spacing: 0.2rem;
+            line-height: 1.2;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+        }
+
+        .featured {
+            padding: 4rem 1rem;
+        }
+
+        .product-grid {
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 1.5rem 1rem;
         }
     }
 

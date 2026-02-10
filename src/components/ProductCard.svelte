@@ -1,9 +1,21 @@
 <script>
     export let product;
-    export let onQuickView = () => {};
+    export let onQuickView = (_) => {};
+
+    function handleKeydown(event) {
+        if (event.key === "Enter" || event.key === " ") {
+            onQuickView(product);
+        }
+    }
 </script>
 
-<div class="card">
+<div
+    class="card"
+    on:click={() => onQuickView(product)}
+    on:keydown={handleKeydown}
+    role="button"
+    tabindex="0"
+>
     <div class="image-container">
         <img src={product.image} alt={product.name} />
         {#if product.badge}
