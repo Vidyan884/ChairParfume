@@ -1,0 +1,175 @@
+﻿
+> chairparfume@0.0.1 build
+> vite build
+
+node.exe : Your 
+jsconfig.json should extend 
+the configuration generated 
+by SvelteKit:
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (Your   
+  jsconfig.j...d by Svelt   
+ eKit::String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+{
+  "extends": "./.svelte-kit/
+tsconfig.json"
+}
+[36mvite v5.4.21 [32mbuilding SSR bundle for production...[36m[39m
+transforming...
+12.40.12 
+[vite-plugin-svelte] C:/User
+s/vidya/OneDrive/Desktop/Web
+/Chairparfume/src/components
+/QuickViewModal.svelte:21:8 
+A11y: Non-interactive 
+element <div> should not be 
+assigned mouse or keyboard 
+event listeners.
+19:         
+transition:fade={{ 
+duration: 200 }}
+20:     >
+21:         <div
+            ^
+22:             
+class="modal"
+23:             on:click|sto
+pPropagation={() => {}}
+node_modules/@sveltejs/kit/s
+rc/runtime/client/client.js 
+(6:23): "untrack" is not 
+exported by "node_modules/sv
+elte/src/runtime/ssr.js", 
+imported by "node_modules/@s
+veltejs/kit/src/runtime/clie
+nt/client.js".
+node_modules/@sveltejs/kit/s
+rc/runtime/client/client.js 
+(333:26): "fork" is not 
+exported by "node_modules/sv
+elte/src/runtime/ssr.js", 
+imported by "node_modules/@s
+veltejs/kit/src/runtime/clie
+nt/client.js".
+node_modules/@sveltejs/kit/s
+rc/runtime/client/client.js 
+(1170:30): "settled" is not 
+exported by "node_modules/sv
+elte/src/runtime/ssr.js", 
+imported by "node_modules/@s
+veltejs/kit/src/runtime/clie
+nt/client.js".
+[32mΓ£ô[39m 120 modules transformed.
+rendering chunks...
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+12.40.17 
+[vite-plugin-svelte] C:/User
+s/vidya/OneDrive/Desktop/Web
+/Chairparfume/src/components
+/QuickViewModal.svelte:21:8 
+A11y: Non-interactive 
+element <div> should not be 
+assigned mouse or keyboard 
+event listeners.
+19:         
+transition:fade={{ 
+duration: 200 }}
+20:     >
+21:         <div
+            ^
+22:             
+class="modal"
+23:             on:click|sto
+pPropagation={() => {}}
+node_modules/@sveltejs/kit/s
+rc/runtime/client/client.js 
+(5:23): "untrack" is not 
+exported by "node_modules/sv
+elte/src/runtime/index.js", 
+imported by "node_modules/@s
+veltejs/kit/src/runtime/clie
+nt/client.js".
+node_modules/@sveltejs/kit/s
+rc/runtime/client/client.js 
+(332:26): "fork" is not 
+exported by "node_modules/sv
+elte/src/runtime/index.js", 
+imported by "node_modules/@s
+veltejs/kit/src/runtime/clie
+nt/client.js".
+node_modules/@sveltejs/kit/s
+rc/runtime/client/client.js 
+(1169:30): "settled" is not 
+exported by "node_modules/sv
+elte/src/runtime/index.js", 
+imported by "node_modules/@s
+veltejs/kit/src/runtime/clie
+nt/client.js".
+[32mΓ£ô[39m 96 modules transformed.
+rendering chunks...
+computing gzip size...
+[2m.svelte-kit/output/client/[22m[32m_app/version.json                            [39m[1m[2m 0.03 kB[22m[1m[22m[2m Γöé gzip:  0.05 kB[22m
+[2m.svelte-kit/output/client/[22m[32m.vite/manifest.json                          [39m[1m[2m 3.95 kB[22m[1m[22m[2m Γöé gzip:  0.64 kB[22m
+[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/4.B6ZC6zHy.css         [39m[1m[2m 0.81 kB[22m[1m[22m[2m Γöé gzip:  0.37 kB[22m
+[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/5.Cb6du4Dx.css         [39m[1m[2m 2.54 kB[22m[1m[22m[2m Γöé gzip:  0.71 kB[22m
+[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/3.BNE_alqg.css         [39m[1m[2m 3.94 kB[22m[1m[22m[2m Γöé gzip:  1.20 kB[22m
+[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/2.CTgl1p-Y.css         [39m[1m[2m 3.96 kB[22m[1m[22m[2m Γöé gzip:  1.11 kB[22m
+[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/0.DE5roHf9.css         [39m[1m[2m 4.06 kB[22m[1m[22m[2m Γöé gzip:  1.23 kB[22m
+[2m.svelte-kit/output/client/[22m[35m_app/immutable/assets/products.B9c4fHip.css  [39m[1m[2m 4.89 kB[22m[1m[22m[2m Γöé gzip:  1.22 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/entry/start.C3PFjmeq.js       [39m[1m[2m 0.08 kB[22m[1m[22m[2m Γöé gzip:  0.09 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/1.C8k911YC.js           [39m[1m[2m 1.00 kB[22m[1m[22m[2m Γöé gzip:  0.58 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/mzGtyZkk.js            [39m[1m[2m 2.08 kB[22m[1m[22m[2m Γöé gzip:  1.00 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/4.D8Q7UQb6.js           [39m[1m[2m 2.53 kB[22m[1m[22m[2m Γöé gzip:  1.30 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/0.DSr-acRq.js           [39m[1m[2m 4.51 kB[22m[1m[22m[2m Γöé gzip:  2.07 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/5.Z72qoKVQ.js           [39m[1m[2m 5.70 kB[22m[1m[22m[2m Γöé gzip:  2.22 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/2.C1I1X6iy.js           [39m[1m[2m 6.79 kB[22m[1m[22m[2m Γöé gzip:  2.72 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/entry/app.N8NM0EXr.js         [39m[1m[2m 7.04 kB[22m[1m[22m[2m Γöé gzip:  2.80 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/nodes/3.CkuwwobT.js           [39m[1m[2m 7.85 kB[22m[1m[22m[2m Γöé gzip:  2.82 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/DqJSmV6R.js            [39m[1m[2m 8.77 kB[22m[1m[22m[2m Γöé gzip:  3.86 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/4Iy3VJz0.js            [39m[1m[2m13.64 kB[22m[1m[22m[2m Γöé gzip:  5.41 kB[22m
+[2m.svelte-kit/output/client/[22m[36m_app/immutable/chunks/Cc_HMgi8.js            [39m[1m[2m26.97 kB[22m[1m[22m[2m Γöé gzip: 10.48 kB[22m
+[32mΓ£ô built in 2.63s[39m
+[2m.svelte-kit/output/server/[22m[32m.vite/manifest.json                          [39m[1m[2m  3.75 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.B6ZC6zHy.css     [39m[1m[2m  0.81 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.Cb6du4Dx.css     [39m[1m[2m  2.54 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.Y81k1ak9.css     [39m[1m[2m  3.92 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_page.CDVG7cyy.css     [39m[1m[2m  3.95 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/_layout.C8DHAL2U.css   [39m[1m[2m  4.02 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[35m_app/immutable/assets/products.B_YCPd4B.css  [39m[1m[2m  4.85 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/ssr2.js                               [39m[1m[2m  0.10 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36minternal.js                                  [39m[1m[2m  0.33 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/environment.js                        [39m[1m[2m  0.62 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/utils.js                              [39m[1m[2m  1.15 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mentries/fallbacks/error.svelte.js            [39m[1m[2m  1.38 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/ssr.js                                [39m[1m[2m  3.89 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/exports.js                            [39m[1m[2m  5.54 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mentries/pages/collections/_page.svelte.js    [39m[1m[2m  5.88 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/internal.js                           [39m[1m[2m  6.27 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mentries/pages/contact/_page.svelte.js        [39m[1m[2m 15.69 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mentries/pages/_layout.svelte.js              [39m[1m[2m 17.49 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mremote-entry.js                              [39m[1m[2m 18.96 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mentries/pages/_page.svelte.js                [39m[1m[2m 23.93 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/shared.js                             [39m[1m[2m 26.00 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mentries/pages/about/_page.svelte.js          [39m[1m[2m 26.82 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mchunks/products.js                           [39m[1m[2m 31.16 kB[22m[1m[22m
+[2m.svelte-kit/output/server/[22m[36mindex.js                                     [39m[1m[2m121.54 kB[22m[1m[22m
+[32mΓ£ô built in 9.04s[39m
+
+Run npm run preview to preview your production build locally.
+
+> Using @sveltejs/adapter-auto
+  Could not detect a supported production environment. See https://svelte.dev/docs/kit/adapters to learn how to configure your app to run on the platform of your choosing
+  Γ£ö done
