@@ -144,8 +144,23 @@
         }
 
         .product-grid {
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-            gap: 1.5rem 1rem;
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 1rem;
+            padding-bottom: 1rem;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Firefox */
+        }
+
+        .product-grid::-webkit-scrollbar {
+            display: none; /* Chrome, Safari */
+        }
+
+        .product-grid :global(> *) {
+            flex: 0 0 70%;
+            max-width: 70%;
+            scroll-snap-align: center;
         }
     }
 
