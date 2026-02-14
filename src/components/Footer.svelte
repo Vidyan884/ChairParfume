@@ -1,7 +1,7 @@
 <footer>
     <div class="content">
         <div class="brand">
-            <h3>CHAIR</h3>
+            <h3>CHAIR PARFUME</h3>
             <p>Esensi Kemewahan</p>
         </div>
         <div class="social-links">
