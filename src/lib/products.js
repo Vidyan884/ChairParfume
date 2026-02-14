@@ -17,7 +17,7 @@ export const products = [
         price: 80000,
         image: "/rich-royal.jpg",
         video: "",
-        badge: "Populer"
+        badge: "Baru"
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const products = [
         price: 80000,
         image: "/nine.jpg",
         video: "",
-        badge: ""
+        badge: "Baru"
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ export const products = [
         price: 80000,
         image: "/omar.jpg",
         video: "/vidio_omar.mp4",
-        badge: "Premium"
+        badge: "Populer"
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ export const products = [
         price: 80000,
         image: "/noura.jpg",
         video: "/vidio_noura.mp4",
-        badge: "Baru"
+        badge: "Terlaris"
     },
     {
         id: 6,
@@ -67,6 +67,6 @@ export const products = [
         price: 80000,
         image: "/virsia.jpeg",
         video: "/vidio_virsia.mp4",
-        badge: ""
+        badge: "Baru"
     }
 ];
