@@ -186,71 +186,6 @@
         display: none;
     }
 
-    @media (max-width: 768px) {
-        h1 {
-            font-size: 2.5rem;
-            letter-spacing: 0.2rem;
-            line-height: 1.2;
-        }
-
-        .section-header h2 {
-            font-size: 2rem;
-        }
-
-        .featured {
-            padding: 4rem 0;
-        }
-
-        .product-grid {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            gap: 1rem;
-            padding: 0 1rem 1rem 1rem;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-        }
-
-        .product-grid::-webkit-scrollbar {
-            display: none;
-        }
-
-        .carousel-item {
-            flex: 0 0 85%;
-            max-width: 85%;
-            scroll-snap-align: center;
-        }
-
-        .carousel-dots {
-            display: flex;
-            justify-content: center;
-            gap: 0.5rem;
-            margin-top: 1.5rem;
-            opacity: 0;
-            transition: opacity 1s ease;
-        }
-
-        .carousel-dots.visible {
-            opacity: 1;
-        }
-
-        .dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            border: 1px solid var(--color-gold);
-            background: transparent;
-            padding: 0;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .dot.active {
-            background: var(--color-gold);
-            transform: scale(1.3);
-        }
-    }
-
     p {
         font-size: 1.2rem;
         margin-bottom: 3rem;
@@ -322,5 +257,76 @@
     .product-grid.visible {
         opacity: 1;
         transform: translateY(0);
+    }
+
+    /* Mobile carousel - MUST come after .product-grid to override display:grid */
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 0.2rem;
+            line-height: 1.2;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+        }
+
+        .featured {
+            padding: 4rem 0;
+            overflow: hidden;
+        }
+
+        .section-header {
+            padding: 0 1rem;
+        }
+
+        .product-grid {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 1rem;
+            padding: 0 1rem 1rem 1rem;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+        }
+
+        .product-grid::-webkit-scrollbar {
+            display: none;
+        }
+
+        .carousel-item {
+            flex: 0 0 85%;
+            max-width: 85%;
+            scroll-snap-align: center;
+        }
+
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .carousel-dots.visible {
+            opacity: 1;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            border: 1px solid var(--color-gold);
+            background: transparent;
+            padding: 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: var(--color-gold);
+            transform: scale(1.3);
+        }
     }
 </style>
