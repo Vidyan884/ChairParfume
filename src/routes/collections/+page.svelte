@@ -20,6 +20,21 @@
         { label: "Spicy", keywords: ["spicy", "rempah", "herbal", "gin"] },
     ];
 
+    // Read filter from URL query param on mount (set by landing page scent discovery)
+    onMount(() => {
+        const params = new URLSearchParams(window.location.search);
+        const filterParam = params.get("filter");
+        if (filterParam) {
+            const matched = filters.find(
+                (f) => f.label.toLowerCase() === filterParam.toLowerCase()
+            );
+            if (matched) {
+                activeFilter = matched.label;
+            }
+        }
+        setTimeout(() => (visible = true), 100);
+    });
+
     $: filteredProducts = products.filter((p) => {
         if (activeFilter === "Semua") return true;
         const filter = filters.find((f) => f.label === activeFilter);
@@ -76,9 +91,7 @@
         activeIndex = closest;
     }
 
-    onMount(() => {
-        setTimeout(() => (visible = true), 100);
-    });
+
 </script>
 
 <svelte:head>
