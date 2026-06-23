@@ -27,6 +27,7 @@
             >
             <a href="/about" on:click={() => (isMenuOpen = false)}>Tentang</a>
             <a href="/contact" on:click={() => (isMenuOpen = false)}>Kontak</a>
+
         </div>
     </div>
 </nav>

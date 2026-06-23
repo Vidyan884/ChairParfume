@@ -70,3 +70,22 @@ export const products = [
         badge: "Baru"
     }
 ];
+
+/**
+ * Try to fetch products from backend API, otherwise return local products fallback.
+ */
+export async function fetchProducts() {
+    // try same-origin first (useful when backend is proxied), then fallback to localhost:3001
+    const candidates = ['/api/products', 'http://localhost:3001/api/products'];
+    for (const url of candidates) {
+        try {
+            const res = await fetch(url, { mode: 'cors' });
+            if (!res.ok) continue;
+            const data = await res.json();
+            return data;
+        } catch (e) {
+            // try next
+        }
+    }
+    return products;
+}
